@@ -1,5 +1,5 @@
 <template>
-  <div class="column is-one-quarter-desktop">
+  <div class="column is-one-quarter">
     <div class="card">
       <div class="card-content">
         <Media

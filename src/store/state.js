@@ -17,6 +17,22 @@ module.exports = {
       cart: false
     },
     {
+      id: 'gk387',
+      title: 'This Is Spinal Tap',
+      director: 'Rob Reiner',
+      thumbnail: 'http://via.placeholder.com/250x350',
+      rating: 0,
+      cart: false
+    },
+    {
+      id: 'gk387',
+      title: 'The Revenant',
+      director: 'Alejandro González Iñárritu',
+      thumbnail: 'http://via.placeholder.com/250x350',
+      rating: 0,
+      cart: false
+    },
+    {
       id: 'jeh38',
       title: '8 1/2',
       director: 'Federico Fellini',

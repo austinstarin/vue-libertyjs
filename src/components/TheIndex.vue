@@ -1,6 +1,6 @@
 <template>
   <section class="section">
-    <div class="columns">
+    <div class="columns is-multiline" >
       <Card
         v-for="movie in $store.state.movies"
         :key="movie.id"
