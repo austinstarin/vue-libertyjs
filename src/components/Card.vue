@@ -4,12 +4,23 @@
       <div class="card-content">
         <Media
           :thumbnail="thumbnail"
-          :alternative="alternative"
+          :alternative="title"
         ></Media>
         <TitleTertiary
           :title="title"
         ></TitleTertiary>
-        <Add></Add>
+        <footer class="card-footer">
+          <p class="card-footer-item">
+            <a href="">View Movie</a>
+          </p>
+          <p class="card-footer-item">
+            <Add
+              :id="id"
+              :cart="cart"
+            >
+            </Add>
+          </p>
+        </footer>
       </div>
     </div>
   </div>
@@ -23,8 +34,10 @@ import TitleTertiary from './TitleTertiary'
 export default {
   name: 'Card',
   props: {
+    id: String,
     title: String,
-    thumbnail: String
+    thumbnail: String,
+    cart: Boolean
   },
   components: {
     Add,

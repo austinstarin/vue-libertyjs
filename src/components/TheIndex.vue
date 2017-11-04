@@ -4,8 +4,10 @@
       <Card
         v-for="movie in $store.state.movies"
         :key="movie.id"
+        :id="movie.id"
         :title="movie.title"
         :thumbnail="movie.thumbnail"
+        :cart="movie.cart"
       >
       </Card>
     </div>
