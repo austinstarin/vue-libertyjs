@@ -7,7 +7,7 @@
         :id="movie.id"
         :title="movie.title"
         :thumbnail="movie.thumbnail"
-        :cart="movie.cart"
+        :list="movie.list"
       >
       </Card>
     </div>

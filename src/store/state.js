@@ -1,4 +1,5 @@
 module.exports = {
+  list: [],
   movies: [
     {
       id: '23jh3',
@@ -6,7 +7,7 @@ module.exports = {
       director: 'Jean-Luc Godard',
       thumbnail: 'http://via.placeholder.com/250x350',
       rating: 0,
-      cart: false
+      list: false
     },
     {
       id: 'gk387',
@@ -14,7 +15,7 @@ module.exports = {
       director: 'Steven Spielberg',
       thumbnail: 'http://via.placeholder.com/250x350',
       rating: 0,
-      cart: false
+      list: false
     },
     {
       id: 'gk387',
@@ -22,7 +23,7 @@ module.exports = {
       director: 'Rob Reiner',
       thumbnail: 'http://via.placeholder.com/250x350',
       rating: 0,
-      cart: false
+      list: false
     },
     {
       id: 'gk387',
@@ -30,7 +31,7 @@ module.exports = {
       director: 'Alejandro González Iñárritu',
       thumbnail: 'http://via.placeholder.com/250x350',
       rating: 0,
-      cart: false
+      list: false
     },
     {
       id: 'jeh38',
@@ -38,7 +39,7 @@ module.exports = {
       director: 'Federico Fellini',
       thumbnail: 'http://via.placeholder.com/250x350',
       rating: 0,
-      cart: false
+      list: false
     },
     {
       id: 'oi39c',
@@ -46,7 +47,7 @@ module.exports = {
       director: 'Steven Spielberg',
       thumbnail: 'http://via.placeholder.com/250x350',
       rating: 0,
-      cart: false
+      list: false
     }
   ]
 }

@@ -16,7 +16,7 @@
           <p class="card-footer-item">
             <Add
               :id="id"
-              :cart="cart"
+              :list="list"
             >
             </Add>
           </p>
@@ -37,7 +37,7 @@ export default {
     id: String,
     title: String,
     thumbnail: String,
-    cart: Boolean
+    list: Boolean
   },
   components: {
     Add,

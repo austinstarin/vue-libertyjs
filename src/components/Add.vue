@@ -1,25 +1,21 @@
 <template>
-  <div>
-  <button v-if="cart" class="button is-danger" @click="removeFromCart">Remove</button>
-  <button v-if="!cart" class="button is-primary" @click="addToCart">Add</button>
-</div>
+  <button class="button is-primary" @click="commitToList">Add</button>
 </template>
 
 <script>
-
 export default {
   name: 'Add',
   props: {
     text: String,
     id: String,
-    cart: Boolean
+    list: Boolean
   },
   methods: {
-    addToCart () {
-      return this.$store.commit('ADD_MOVIE_CART', this.id)
-    },
-    removeFromCart () {
-      return this.$store.commit('REMOVE_MOVIE_CART', this.id)
+    commitToList () {
+      return this.$store.dispatch('COMMIT_TO_LIST', {
+        id: this.id,
+        list: this.list
+      })
     }
   }
 }
