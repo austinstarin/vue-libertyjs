@@ -14,9 +14,8 @@
       <div class="navbar-menu">
         <div class="navbar-end">
           <div class="navbar-item">
-            <a class="indicator-container" href="#">
-              Cart
-              <span v-show="count > 0" class="indicator">{{ count }}</span>
+            <a href="#">
+              List {{ listCount }}
             </a>
           </div>
         </div>
@@ -30,30 +29,9 @@
 export default {
   name: 'TheHeader',
   computed: {
-    count () {
-      console.log(this.$store.getters.cartCount)
-      return this.$store.getters.cartCount
+    listCount () {
+      return this.$store.getters.countList
     }
   }
 }
 </script>
-
-<style scoped>
-.indicator-container {
-  position: relative;
-}
-.indicator {
-  position: absolute;
-  top: 0;
-  left: -1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 1rem;
-  width: 1rem;
-  border-radius: 50%;
-  color: #fff;
-  font-size: 0.7rem;
-  background-color: #ff3860;
-}
-</style>

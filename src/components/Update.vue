@@ -1,5 +1,5 @@
 <template>
-  <button class="button is-primary" @click="commitToList">Add</button>
+  <button :class="classObject" @click="commitToList">{{ buttonText }}</button>
 </template>
 
 <script>
@@ -9,6 +9,14 @@ export default {
     text: String,
     id: String,
     list: Boolean
+  },
+  computed: {
+    classObject () {
+      return `button ${(this.list ? `is-danger` : 'is-primary')}`
+    },
+    buttonText () {
+      return this.list ? `Remove` : `Add`
+    }
   },
   methods: {
     commitToList () {

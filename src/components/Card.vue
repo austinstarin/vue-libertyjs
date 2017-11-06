@@ -9,6 +9,7 @@
         <TitleTertiary
           :title="title"
         ></TitleTertiary>
+        <p class="subtitle is-5">{{ director }}</p>
         <footer class="card-footer">
           <p class="card-footer-item">
             <a href="">View Movie</a>
@@ -36,6 +37,7 @@ export default {
   props: {
     id: String,
     title: String,
+    director: String,
     thumbnail: String,
     list: Boolean
   },

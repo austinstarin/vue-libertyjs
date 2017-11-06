@@ -6,6 +6,7 @@
         :key="movie.id"
         :id="movie.id"
         :title="movie.title"
+        :director="movie.director"
         :thumbnail="movie.thumbnail"
         :list="movie.list"
       >
