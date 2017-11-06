@@ -14,11 +14,11 @@
             <a href="">View Movie</a>
           </p>
           <p class="card-footer-item">
-            <Add
+            <Update
               :id="id"
               :list="list"
             >
-            </Add>
+          </Update>
           </p>
         </footer>
       </div>
@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import Add from './Add'
+import Update from './Update'
 import Media from './Media'
 import TitleTertiary from './TitleTertiary'
 
@@ -40,7 +40,7 @@ export default {
     list: Boolean
   },
   components: {
-    Add,
+    Update,
     Media,
     TitleTertiary
   }
