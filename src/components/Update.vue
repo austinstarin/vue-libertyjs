@@ -1,5 +1,5 @@
 <template>
-  <button :class="classObject" @click="commitToList">{{ buttonText }}</button>
+  <button :class="classObject" @click="manageCommit">{{ buttonText }}</button>
 </template>
 
 <script>
@@ -19,8 +19,21 @@ export default {
     }
   },
   methods: {
-    commitToList () {
-      return this.$store.dispatch('COMMIT_TO_LIST', {
+    manageCommit () {
+      if (this.list === true) {
+        return this.commitRemoveFromList()
+      } else {
+        return this.commitAddToList()
+      }
+    },
+    commitAddToList () {
+      return this.$store.dispatch('COMMIT_ADD_TO_LIST', {
+        id: this.id,
+        list: this.list
+      })
+    },
+    commitRemoveFromList () {
+      return this.$store.dispatch('COMMIT_REMOVE_FROM_LIST', {
         id: this.id,
         list: this.list
       })
