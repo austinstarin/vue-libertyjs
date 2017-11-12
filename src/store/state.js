@@ -26,7 +26,8 @@ module.exports = {
       thumbnail: 'http://via.placeholder.com/250x350',
       synopsis: 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.',
       rating: 0,
-      list: false
+      list: false,
+      featured: true
     },
     {
       id: 'euf38',
