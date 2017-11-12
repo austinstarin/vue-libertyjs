@@ -1,9 +1,7 @@
 <template>
-  <div>
-    <form>
-      <rating :items="items" :value="rating" @change="update"></rating>
-    </form>
-  </div>
+  <form>
+    <rating :items="items" :value="rating" @change="update"></rating>
+  </form>
 </template>
 
 <script>
