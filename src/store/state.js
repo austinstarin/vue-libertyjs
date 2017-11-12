@@ -2,7 +2,7 @@ module.exports = {
   list: [],
   movies: [
     {
-      id: '84hdf',
+      id: 'ged3f',
       title: 'Blade Runner',
       director: 'Ridley Scott',
       thumbnail: 'http://via.placeholder.com/250x350',
@@ -11,7 +11,7 @@ module.exports = {
       list: false
     },
     {
-      id: '84hdf',
+      id: 'gd38s',
       title: 'The Goonies',
       director: 'Richard Donner',
       thumbnail: 'http://via.placeholder.com/250x350',

@@ -27,7 +27,7 @@ export default {
     },
     movie () {
       let id = this.$route.params.id
-      return this.$store.state.movies.find((movie) => id)
+      return this.$store.state.movies.find((movie) => movie.id === id)
     }
   }
 }

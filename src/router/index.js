@@ -14,6 +14,7 @@ export default new Router({
     },
     {
       path: '/movies/:id',
+      name: 'movie',
       props: true,
       component: TheShow
     }

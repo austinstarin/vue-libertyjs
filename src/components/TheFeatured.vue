@@ -6,7 +6,7 @@
           <h1 class="title is-bold is-1">{{ movie.title }}</h1>
           <p class="subtitle is-4">{{ movie.synopsis }}</p>
            <router-link
-            :to="'/movies/' + movie.id"
+            :to="{ name: 'movie', params: { id: movie.id } }"
             class="button is-primary is-inverted is-outlined"
             >See Movies</router-link>
         </div>
