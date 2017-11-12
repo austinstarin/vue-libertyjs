@@ -1,5 +1,6 @@
 <template>
-  <section class="section">
+  <section>
+    <TheFeatured />
     <div class="columns is-multiline" >
       <MovieCard
         v-for="movie in movies"
@@ -17,11 +18,13 @@
 </template>
 
 <script>
+import TheFeatured from '@/components/TheFeatured'
 import MovieCard from './MovieCard'
 
 export default {
   name: 'TheIndex',
   components: {
+    TheFeatured,
     MovieCard
   },
   computed: {
