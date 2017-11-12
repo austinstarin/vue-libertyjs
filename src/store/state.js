@@ -6,6 +6,7 @@ module.exports = {
       title: 'Blade Runner',
       director: 'Ridley Scott',
       thumbnail: 'http://via.placeholder.com/250x350',
+      synopsis: 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.',
       rating: 0,
       list: false
     },
@@ -14,6 +15,7 @@ module.exports = {
       title: 'The Goonies',
       director: 'Richard Donner',
       thumbnail: 'http://via.placeholder.com/250x350',
+      synopsis: 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.',
       rating: 0,
       list: false
     },
@@ -22,6 +24,7 @@ module.exports = {
       title: 'Breathless',
       director: 'Jean-Luc Godard',
       thumbnail: 'http://via.placeholder.com/250x350',
+      synopsis: 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.',
       rating: 0,
       list: false
     },
@@ -30,6 +33,7 @@ module.exports = {
       title: 'Indiana Jones',
       director: 'Steven Spielberg',
       thumbnail: 'http://via.placeholder.com/250x350',
+      synopsis: 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.',
       rating: 0,
       list: false
     },
@@ -38,6 +42,7 @@ module.exports = {
       title: 'This Is Spinal Tap',
       director: 'Rob Reiner',
       thumbnail: 'http://via.placeholder.com/250x350',
+      synopsis: 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.',
       rating: 0,
       list: false
     },
@@ -46,6 +51,7 @@ module.exports = {
       title: 'The Revenant',
       director: 'Alejandro González Iñárritu',
       thumbnail: 'http://via.placeholder.com/250x350',
+      synopsis: 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.',
       rating: 0,
       list: false
     },
@@ -54,6 +60,7 @@ module.exports = {
       title: '8 1/2',
       director: 'Federico Fellini',
       thumbnail: 'http://via.placeholder.com/250x350',
+      synopsis: 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.',
       rating: 0,
       list: false
     },
@@ -62,6 +69,7 @@ module.exports = {
       title: 'E.T. the Extra-Terrestrial',
       director: 'Steven Spielberg',
       thumbnail: 'http://via.placeholder.com/250x350',
+      synopsis: 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.',
       rating: 0,
       list: false
     }
