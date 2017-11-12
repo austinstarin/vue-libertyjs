@@ -1,7 +1,7 @@
 <template>
   <section class="section">
     <div class="columns is-multiline" >
-      <Card
+      <MovieCard
         v-for="movie in $store.state.movies"
         :key="movie.id"
         :id="movie.id"
@@ -10,18 +10,18 @@
         :thumbnail="movie.thumbnail"
         :list="movie.list"
       >
-      </Card>
+      </MovieCard>
     </div>
   </section>
 </template>
 
 <script>
-import Card from './Card'
+import MovieCard from './MovieCard'
 
 export default {
   name: 'TheIndex',
   components: {
-    Card
+    MovieCard
   }
 }
 </script>
