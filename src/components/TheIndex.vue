@@ -1,21 +1,20 @@
 <template>
-  <div>
+  <section>
     <TheFeatured />
-    <section class="section">
-      <div class="columns is-multiline" >
-        <MovieCard
-          v-for="movie in $store.state.movies"
-          :key="movie.id"
-          :id="movie.id"
-          :title="movie.title"
-          :director="movie.director"
-          :thumbnail="movie.thumbnail"
-          :list="movie.list"
-        >
-        </MovieCard>
-      </div>
-    </section>
-  </div>
+    <div class="columns is-multiline" >
+      <MovieCard
+        v-for="movie in movies"
+        :key="movie.id"
+        :id="movie.id"
+        :title="movie.title"
+        :director="movie.director"
+        :thumbnail="movie.thumbnail"
+        :list="movie.list"
+        :rating="movie.rating"
+      >
+      </MovieCard>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -27,6 +26,11 @@ export default {
   components: {
     TheFeatured,
     MovieCard
+  },
+  computed: {
+    movies () {
+      return this.$store.getters.movies
+    }
   }
 }
 </script>
