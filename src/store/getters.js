@@ -4,5 +4,8 @@ export default {
   },
   featuredMovie: function (state) {
     return state.movies.find((movie) => movie.featured === true)
+  },
+  movies: function (state) {
+    return state.movies
   }
 }

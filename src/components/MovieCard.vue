@@ -5,6 +5,7 @@
         <img :src="thumbnail" :alt="alternative" />
         <h3 class="title is-5">{{ title }}</h3>
         <p class="subtitle is-5">{{ director }}</p>
+        <StarRating :id="id" :rating="rating"></StarRating>
         <footer class="card-footer">
           <p class="card-footer-item">
             <router-link
@@ -16,7 +17,7 @@
               :id="id"
               :list="list"
             >
-          </Update>
+            </Update>
           </p>
         </footer>
       </div>
@@ -25,18 +26,22 @@
 </template>
 
 <script>
+import StarRating from './StarRating'
 import Update from './Update'
 
 export default {
-  name: 'Card',
+  name: 'MovieCard',
   props: {
     id: String,
     title: String,
     director: String,
     thumbnail: String,
-    list: Boolean
+    list: Boolean,
+    rating: Number,
+    alternative: String
   },
   components: {
+    StarRating,
     Update
   }
 }
