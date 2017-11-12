@@ -19,7 +19,7 @@
 
 <script>
 import TheFeatured from '@/components/TheFeatured'
-import MovieCard from './MovieCard'
+import MovieCard from '@/components/MovieCard'
 
 export default {
   name: 'TheIndex',

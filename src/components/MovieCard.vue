@@ -26,8 +26,8 @@
 </template>
 
 <script>
-import StarRating from './StarRating'
-import Update from './Update'
+import StarRating from '@/components/StarRating'
+import Update from '@/components/Update'
 
 export default {
   name: 'MovieCard',
