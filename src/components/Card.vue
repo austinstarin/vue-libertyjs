@@ -2,13 +2,8 @@
   <div class="column is-one-quarter">
     <div class="card">
       <div class="card-content">
-        <Media
-          :thumbnail="thumbnail"
-          :alternative="title"
-        ></Media>
-        <TitleTertiary
-          :title="title"
-        ></TitleTertiary>
+        <img :src="thumbnail" :alt="alternative" />
+        <h3 class="title is-5">{{ title }}</h3>
         <p class="subtitle is-5">{{ director }}</p>
         <footer class="card-footer">
           <p class="card-footer-item">
@@ -29,8 +24,6 @@
 
 <script>
 import Update from './Update'
-import Media from './Media'
-import TitleTertiary from './TitleTertiary'
 
 export default {
   name: 'Card',
@@ -42,9 +35,7 @@ export default {
     list: Boolean
   },
   components: {
-    Update,
-    Media,
-    TitleTertiary
+    Update
   }
 }
 </script>
