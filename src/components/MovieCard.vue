@@ -8,7 +8,9 @@
         <StarRating :id="id" :rating="rating"></StarRating>
         <footer class="card-footer">
           <p class="card-footer-item">
-            <a href="">View Movie</a>
+            <router-link
+             :to="{ name: 'movie', params: { id: id } }"
+             >See More</router-link>
           </p>
           <p class="card-footer-item">
             <Update
