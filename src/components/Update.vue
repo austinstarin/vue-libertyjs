@@ -5,6 +5,11 @@
 <script>
 export default {
   name: 'Add',
+  data () {
+    return {
+      loading: false
+    }
+  },
   props: {
     text: String,
     id: String,
@@ -12,7 +17,7 @@ export default {
   },
   computed: {
     classObject () {
-      return `button ${(this.list ? 'is-danger' : 'is-primary')}`
+      return `button ${(this.list ? 'is-danger' : 'is-primary')} ${(this.loading ? 'is-loading' : '')}`
     },
     buttonText () {
       return this.list ? 'Remove' : 'Add'
@@ -20,10 +25,17 @@ export default {
   },
   methods: {
     manageCommit () {
+      this.loading = true
       if (this.list === true) {
         return this.commitRemoveFromList()
+          .then(() => {
+            this.loading = false
+          })
       } else {
         return this.commitAddToList()
+          .then(() => {
+            this.loading = false
+          })
       }
     },
     commitAddToList () {
