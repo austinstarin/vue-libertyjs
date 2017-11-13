@@ -1,20 +1,24 @@
 <template>
-  <section>
+  <div>
     <TheFeatured />
-    <div class="columns is-multiline" >
-      <MovieCard
-        v-for="movie in movies"
-        :key="movie.id"
-        :id="movie.id"
-        :title="movie.title"
-        :director="movie.director"
-        :thumbnail="movie.thumbnail"
-        :list="movie.list"
-        :rating="movie.rating"
-      >
-      </MovieCard>
-    </div>
-  </section>
+    <section class="section">
+      <div class="container">
+        <div class="columns is-multiline" >
+          <MovieCard
+            v-for="movie in movies"
+            :key="movie.id"
+            :id="movie.id"
+            :title="movie.title"
+            :director="movie.director"
+            :thumbnail="movie.thumbnail"
+            :list="movie.list"
+            :rating="movie.rating"
+          >
+          </MovieCard>
+        </div>
+      </div>
+    </section>
+  </div>
 </template>
 
 <script>
