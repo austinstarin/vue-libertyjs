@@ -3,7 +3,7 @@
     <div class="card">
       <div class="card-content">
         <img :src="thumbnail" :alt="alternative" />
-        <h3 class="title is-5">{{ title }}</h3>
+        <h2 class="title is-5">{{ title }}</h2>
         <p class="subtitle is-5">{{ director }}</p>
         <StarRating :id="id" :rating="rating"></StarRating>
         <footer class="card-footer">

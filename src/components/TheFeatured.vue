@@ -8,7 +8,7 @@
            <router-link
             :to="{ name: 'movie', params: { id: movie.id } }"
             class="button is-primary is-inverted is-outlined"
-            >See Movies</router-link>
+            >See More</router-link>
         </div>
       </div>
     </div>
