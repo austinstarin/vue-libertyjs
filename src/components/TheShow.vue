@@ -20,10 +20,10 @@ export default {
   name: 'TheShow',
   computed: {
     tagClassObject () {
-      return `tag ${(this.list ? `is-primary` : 'is-black')}`
+      return `tag ${(this.movie.list ? `is-primary` : 'is-black')}`
     },
     tagText () {
-      return this.list ? `In List` : `Not In List`
+      return this.movie.list ? `In List` : `Not In List`
     },
     movie () {
       let id = this.$route.params.id
