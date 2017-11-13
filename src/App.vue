@@ -23,4 +23,8 @@ export default {
 
 <style>
   @import '../node_modules/bulma/css/bulma.css';
+  @import '../node_modules/font-awesome/css/font-awesome.css';
+  main {
+    margin-top: 52px;
+  }
 </style>

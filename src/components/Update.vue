@@ -12,10 +12,10 @@ export default {
   },
   computed: {
     classObject () {
-      return `button ${(this.list ? `is-danger` : 'is-primary')}`
+      return `button ${(this.list ? 'is-danger' : 'is-primary')}`
     },
     buttonText () {
-      return this.list ? `Remove` : `Add`
+      return this.list ? 'Remove' : 'Add'
     }
   },
   methods: {
