@@ -11,7 +11,6 @@ export default {
     }
   },
   props: {
-    text: String,
     id: String,
     list: Boolean
   },
@@ -26,7 +25,7 @@ export default {
   methods: {
     manageCommit () {
       this.loading = true
-      if (this.list === true) {
+      if (this.list) {
         return this.commitRemoveFromList()
           .then(() => {
             this.loading = false
@@ -40,14 +39,12 @@ export default {
     },
     commitAddToList () {
       return this.$store.dispatch('COMMIT_ADD_TO_LIST', {
-        id: this.id,
-        list: this.list
+        id: this.id
       })
     },
     commitRemoveFromList () {
       return this.$store.dispatch('COMMIT_REMOVE_FROM_LIST', {
-        id: this.id,
-        list: this.list
+        id: this.id
       })
     }
   }
