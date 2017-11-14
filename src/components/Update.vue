@@ -25,7 +25,7 @@ export default {
   methods: {
     manageCommit () {
       this.loading = true
-      if (this.list === true) {
+      if (this.list) {
         return this.commitRemoveFromList()
           .then(() => {
             this.loading = false
