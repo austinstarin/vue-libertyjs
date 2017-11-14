@@ -7,6 +7,7 @@
       <div class="column is-three-quarters">
         <small :class="tagClassObject">{{ tagText }}</small>
         <h1 class="title is-1">{{ movie.title }}</h1>
+        <StarRating :id="movie.id" :rating="movie.rating"></StarRating>
         <h2 class="title is-5">{{ movie.director }}</h2>
         <p>{{ movie.synopsis }}</p>
       </div>
@@ -15,9 +16,13 @@
 </template>
 
 <script>
+import StarRating from '@/components/StarRating'
 
 export default {
   name: 'TheShow',
+  components: {
+    StarRating
+  },
   computed: {
     tagClassObject () {
       return `tag ${(this.movie.list ? `is-primary` : 'is-black')}`
