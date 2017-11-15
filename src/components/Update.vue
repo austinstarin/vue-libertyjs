@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'Add',
+  name: 'Update',
   data () {
     return {
       loading: false
