@@ -26,24 +26,24 @@ export default {
     manageCommit () {
       this.loading = true
       if (this.list) {
-        return this.commitRemoveFromList()
+        return this.removeFromList()
           .then(() => {
             this.loading = false
           })
       } else {
-        return this.commitAddToList()
+        return this.addToList()
           .then(() => {
             this.loading = false
           })
       }
     },
-    commitAddToList () {
-      return this.$store.dispatch('COMMIT_ADD_TO_LIST', {
+    addToList () {
+      return this.$store.dispatch('ADD_TO_LIST', {
         id: this.id
       })
     },
-    commitRemoveFromList () {
-      return this.$store.dispatch('COMMIT_REMOVE_FROM_LIST', {
+    removeFromList () {
+      return this.$store.dispatch('REMOVE_FROM_LIST', {
         id: this.id
       })
     }
